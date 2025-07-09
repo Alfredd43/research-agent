@@ -1,0 +1,11 @@
+cohere
+langchain
+streamlit
+fastapi
+requests
+pandas
+scikit-learn
+matplotlib
+grobid-client
+python-dotenv
+uvicorn 
