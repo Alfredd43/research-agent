@@ -1,35 +1,42 @@
-# 🧠 AI-Powered Research Assistant (Cohere & Free APIs)
+# AI-Powered Research Assistant
 
-- Automates academic research using modular LLM agents
-- Finds, summarizes, and extracts citations from research papers
-- Identifies research gaps, trends, and suggests new ideas
+A modular, extensible platform that automates academic research using advanced LLM agents and free APIs. Ideal for capstone projects, portfolios, and research demos.
+
+## Features
+- Automates literature search, summarization, and citation extraction
+- Identifies research gaps, trends, and generates novel ideas
 - Organizes workflow and creates custom reading plans
-- No OpenAI costs: uses Cohere + free APIs (Semantic Scholar, arXiv)
-- Modular, extensible, and perfect for capstone/portfolio/demo
+- No OpenAI costs: leverages Cohere and free APIs (Semantic Scholar, arXiv)
+- Modular agent-based architecture for easy extension
 
-## Key Agents
-- **LiteratureAgent**: Searches open databases (Semantic Scholar/arXiv)
+## Core Agents
+- **LiteratureAgent**: Searches open-access databases (Semantic Scholar, arXiv)
 - **SummarizerAgent**: Summarizes papers using Cohere Command-R
 - **CitationAgent**: Extracts and formats references (GROBID)
-- **InsightAgent**: Finds gaps, contradictions, trends (embeddings, clustering)
-- **IdeaGeneratorAgent**: Suggests novel research ideas
-- **SchedulerAgent**: Creates weekly research/reading plans
+- **InsightAgent**: Detects gaps, contradictions, and trends (embeddings, clustering)
+- **IdeaGeneratorAgent**: Proposes new research ideas
+- **SchedulerAgent**: Builds weekly research/reading plans
 
-## Tech Stack
-- Cohere Command-R+, LangChain/AutoGen, Streamlit, FastAPI
-- Semantic Scholar API, arXiv API, GROBID
-- pandas, scikit-learn, matplotlib, Hugging Face
+## Architecture
+- **Backend**: FastAPI, modular agent system
+- **Frontend**: Streamlit UI for interactive research workflow
+- **Integrations**: Cohere, Semantic Scholar, arXiv, GROBID, Hugging Face
+- **Data Science**: pandas, scikit-learn, matplotlib
 
-## Setup
-- Clone repo & install requirements: `pip install -r requirements.txt`
-- Add Cohere API key to `config/cohere_keys.json`
-- Run Streamlit UI: `streamlit run app/streamlit_ui.py`
+## Quickstart
+1. Clone the repo: `git clone <repo-url>`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Add your Cohere API key to `config/cohere_keys.json`
+4. Launch the UI: `streamlit run app/streamlit_ui.py`
 
 ## Folder Structure
-- `agents/` — All automation agents
-- `app/` — Streamlit UI & backend logic
-- `utils/` — API clients, text cleaning
+- `agents/` — Automation agents
+- `app/` — Streamlit UI & backend
+- `utils/` — API clients, text processing
 - `config/` — API keys/configs
 
-## Future Ideas
-- Chrome extension, voice commands, Notion/Obsidian export, user feedback loop 
+## Roadmap
+- Chrome extension
+- Voice command support
+- Notion/Obsidian export
+- User feedback loop 
